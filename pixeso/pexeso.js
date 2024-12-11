@@ -6,6 +6,8 @@ let guessed = [];
 
 let pair = [];
 
+let score = 0;
+
 function show(id) {
     if (reverse) {
         reverse_cards();
@@ -27,6 +29,8 @@ function show(id) {
                 guessed.push(...pair);
                 pair[0].classList.add("guessed");
                 pair[1].classList.add("guessed");
+                score++;
+                document.getElementById("score").textContent = score;
                 pair = [];
             }
         }
@@ -57,4 +61,6 @@ function reset() {
     guessed=[];
     reverse=false;
     reverse_cards();
+    score = 0;
+    document.getElementById("score").textContent = score;
 }
