@@ -18,7 +18,7 @@
             border-style: solid;
         }
         .guessed {
-            border-color: yellow;
+            display: none;
         }
         .center {
             text-align: center;
@@ -30,6 +30,9 @@
     <div class="container center">
         <div class="col-12">
             <button type="button" class="btn btn-success mt-5" onclick="reset()">Reset</button>
+        </div>
+        <div class="col-12">
+            <h1 id="score">0</h1>
         </div>
         <div class="row">
             <div class="col-12 col-md-3 col-sm-6 pexeso-card">
