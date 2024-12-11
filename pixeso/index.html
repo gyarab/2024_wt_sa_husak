@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+
+    <style>
+        .pexeso-card {
+            margin-top: 100px;
+        }
+        .pexeso-img {
+            border-radius: 10px;
+            border: 5px;
+            border-color: black;
+            border-style: solid;
+        }
+        .guessed {
+            border-color: yellow;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container center">
+        <div class="col-12">
+            <button type="button" class="btn btn-success mt-5" onclick="reset()">Reset</button>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-3 col-sm-6 pexeso-card">
+                <img id="p1" class="pexeso-img" src="https://placehold.co/150x150" alt="pexeso1" onclick="show(1)"/>
+            </div>
+            <div class="col-12 col-md-3 col-sm-6 pexeso-card">
+                <img id="p2" class="pexeso-img" src="https://placehold.co/150x150" alt="pexeso2" onclick="show(2)"/>
+            </div>
+            <div class="col-12 col-md-3 col-sm-6 pexeso-card">
+                <img id="p3" class="pexeso-img" src="https://placehold.co/150x150" alt="pexeso3" onclick="show(3)"/>
+            </div>
+            <div class="col-12 col-md-3 col-sm-6 pexeso-card">
+                <img id="p4" class="pexeso-img" src="https://placehold.co/150x150" alt="pexeso4" onclick="show(4)"/>
+            </div>
+            <div class="col-12 col-md-3 col-sm-6 pexeso-card">
+                <img id="p5" class="pexeso-img" src="https://placehold.co/150x150" alt="pexeso5" onclick="show(5)"/>
+            </div>
+            <div class="col-12 col-md-3 col-sm-6 pexeso-card">
+                <img id="p6" class="pexeso-img" src="https://placehold.co/150x150" alt="pexeso6" onclick="show(6)"/>
+            </div>
+            <div class="col-12 col-md-3 col-sm-6 pexeso-card">
+                <img id="p7" class="pexeso-img" src="https://placehold.co/150x150" alt="pexeso7" onclick="show(7)"/>
+            </div>
+            <div class="col-12 col-md-3 col-sm-6 pexeso-card">
+                <img id="p8" class="pexeso-img" src="https://placehold.co/150x150" alt="pexeso8" onclick="show(8)"/>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="pexeso.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
